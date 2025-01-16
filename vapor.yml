@@ -1,0 +1,17 @@
+id: 2
+name: vapor-laravel-app
+environments:
+  production:
+    concurrency: 50
+    warm: 10
+    firewall:
+      rate-limit: 1000
+      bot-control:
+        - CategorySearchEngine
+        - CategorySocialMedia
+        - CategoryScrapingFramework
+    build:
+      - 'composer install --no-dev'
+  my-environment:
+    build:
+      - 'composer install --no-dev'
