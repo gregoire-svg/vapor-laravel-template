@@ -1,5 +1,5 @@
 id: 2
-name: vapor-laravel-app
+name: vapor
 environments:
   production:
     concurrency: 50
