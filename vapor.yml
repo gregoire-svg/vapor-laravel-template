@@ -1,17 +1,7 @@
-id: 2
-name: vapor
+id: 68776
+name: Vapor
 environments:
   production:
-    concurrency: 50
-    warm: 10
-    firewall:
-      rate-limit: 1000
-      bot-control:
-        - CategorySearchEngine
-        - CategorySocialMedia
-        - CategoryScrapingFramework
-    build:
-      - 'composer install --no-dev'
-  my-environment:
+    runtime: "php-8.2:al2"
     build:
       - 'composer install --no-dev'
